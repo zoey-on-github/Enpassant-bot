@@ -1,3 +1,5 @@
+repo is written with my needs in mind, this is the original readme that came from the forked repo, including it because i just find it convient to go back to sometimes, will remove once bot is in better state
+
 # Chess Coding Challenge (C#)
 Welcome to the [chess coding challenge](https://youtu.be/iScy18pVR58)! This is a friendly competition in which your goal is to create a small chess bot (in C#) using the framework provided in this repository.
 Once submissions close, these bots will battle it out to discover which bot is best!
