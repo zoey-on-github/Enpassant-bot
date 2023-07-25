@@ -7,28 +7,39 @@ public class MyBot : IChessBot
 {
     //comment
     public Move Think(Board board, Timer timer)
+        //new ChessChallenge.Chess.Move();
     {
+        /*
         Random rng = new();
         Move[] allMoves = board.GetLegalMoves();
+        
+        
         Move moveToPlay = allMoves[rng.Next(allMoves.Length)];
         return moveToPlay;
-        /* 
-        bool MoveIsGood(Board board, Move move)
-         {
-             board.GetLegalMoves();
-             if (move.IsEnPassant)
-             {
-                 ;
-             }
-             else
- 
-             {
-                 Random rng = new();
-                 Move moveToPlay = allMoves[rng.Next(allMoves.Length)];
-                 break;
-             }
-         }
-     
-     } */
+        */
+
+        //Move[] allMoves = board.GetLegalMoves();
+    
+
+    //board.GetLegalMoves();
+        //public Boolean IsEnPassant => ChessChallenge.Chess.Move.EnPassantCaptureFlag
+        //foreach (Move move in allMoves)
+       // {
+
+            if (ChessChallenge.Chess.Move.EnPassantCaptureFlag == 0)
+            {
+                
+            }
+            else
+
+            {
+                    Random rng = new();
+                    Move moveToPlay = allMoves[rng.Next(allMoves.Length)];
+                    break;
+                }
+
+
+            }
+        }
     }
-}
+
