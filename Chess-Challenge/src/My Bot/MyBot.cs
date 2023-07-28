@@ -9,37 +9,32 @@ public class MyBot : IChessBot
     public Move Think(Board board, Timer timer)
         //new ChessChallenge.Chess.Move();
     {
-        /*
-        Random rng = new();
         Move[] allMoves = board.GetLegalMoves();
-        
-        
+        Random rng = new();
         Move moveToPlay = allMoves[rng.Next(allMoves.Length)];
-        return moveToPlay;
-        */
-
-        //Move[] allMoves = board.GetLegalMoves();
-    
-
-    //board.GetLegalMoves();
-        //public Boolean IsEnPassant => ChessChallenge.Chess.Move.EnPassantCaptureFlag
-        //foreach (Move move in allMoves)
-       // {
-
-            if (ChessChallenge.Chess.Move.EnPassantCaptureFlag == 0)
+        
+        foreach (var variabMove in board.GetLegalMoves())
+        {
+            if (variabMove.IsEnPassant)
             {
-                
+                moveToPlay = move;
+                break;
             }
-            else
 
-            {
-                    Random rng = new();
-                    Move moveToPlay = allMoves[rng.Next(allMoves.Length)];
-                    break;
-                }
-
-
-            }
+            
+              
+            
         }
+     
     }
+}
+     
+                
+            
+            
+
+
+            
+        
+    
 
