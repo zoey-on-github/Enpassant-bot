@@ -1,6 +1,5 @@
 ﻿using ChessChallenge.API;
 using System;
-
 namespace ChessChallenge.Example
 {
     // A simple bot that can spot mate in one, and always captures the most valuable piece it can.
@@ -30,7 +29,7 @@ namespace ChessChallenge.Example
 
                 // Find highest value capture
                 Piece capturedPiece = board.GetPiece(move.TargetSquare);
-                int capturedPieceValue = pieceValues[(int)capturedPiece.PieceType];
+                int capturedPieceValue = Values[(int)capturedPiece.PieceType];
 
                 if (capturedPieceValue > highestValueCapture)
                 {
