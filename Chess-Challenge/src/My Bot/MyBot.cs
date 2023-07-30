@@ -13,11 +13,11 @@ public class MyBot : IChessBot
         var moveToPlay = allMoves[rng.Next(allMoves.Length)];
 
         foreach (var variabMove in board.GetLegalMoves())
-        {
             if (variabMove.IsEnPassant)
+            {
                 Console.WriteLine("holy hell");
-            return variabMove;
-        }
+                return variabMove;
+            }
 
         return moveToPlay;
     }
