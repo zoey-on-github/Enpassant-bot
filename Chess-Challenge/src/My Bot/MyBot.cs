@@ -5,7 +5,6 @@ using ChessChallenge.API;
 //TODO: maybe also implement racks kia's idea of only moving pawns furthest??
 public class MyBot : IChessBot
 {
-    //comment
     public Move Think(Board board, Timer timer)
         //new ChessChallenge.Chess.Move();
     {
@@ -16,14 +15,10 @@ public class MyBot : IChessBot
         foreach (var variabMove in board.GetLegalMoves())
         {
             if (variabMove.IsEnPassant)
-            {
-                return variabMove;
-            }
-
-            {
-                Random rng = new();
-                var moveToPlay = allMoves[rng.Next(allMoves.Length)];
-            }
+                Console.WriteLine("holy hell");
+            return variabMove;
         }
+
+        return moveToPlay;
     }
 }
